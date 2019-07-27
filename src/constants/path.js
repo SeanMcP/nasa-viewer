@@ -1,4 +1,6 @@
 export default {
     home: '/',
-    earth: '/earth'
+    earth: '/earth',
+    mars: '/mars',
+    marsSol: '/mars/:sol'
 }

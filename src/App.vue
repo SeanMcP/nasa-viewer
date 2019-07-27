@@ -12,6 +12,7 @@ export default {
       <nav>
         <router-link to="/">🚀 NASA Viewer</router-link>
         <router-link to="/earth">Earth</router-link>
+        <router-link to="/mars">Mars</router-link>
       </nav>
     </header>
     <main>
