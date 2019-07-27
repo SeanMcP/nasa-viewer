@@ -1,18 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <Earth />
+    <header>
+      <nav>
+        <router-link to="/">🚀 NASA Viewer</router-link>
+        <router-link to="/earth">Earth</router-link>
+      </nav>
+    </header>
+    <main>
+      <router-view></router-view>
+    </main>
   </div>
 </template>
 
 <script>
-import Earth from "./components/Earth.vue";
-
 export default {
-  name: "app",
-  components: {
-    Earth
-  }
+  name: "app"
 };
 </script>
 
