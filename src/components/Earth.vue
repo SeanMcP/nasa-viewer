@@ -1,7 +1,3 @@
-<template>
-  <div>{{greeting}} Earth!</div>
-</template>
-
 <script>
 export default {
   data() {
@@ -14,3 +10,7 @@ export default {
   }
 };
 </script>
+
+<template>
+  <div>{{greeting}} Earth!</div>
+</template>
