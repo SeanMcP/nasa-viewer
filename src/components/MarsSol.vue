@@ -50,7 +50,15 @@ export default {
       <p>No photos on this sol</p>
     </div>
     <footer>
-      <router-link :to="'/mars/' + (parseInt($route.params.sol) + 1)">Next sol</router-link>
+      <router-link
+        class="nav-link nav-link--next"
+        :to="'/mars/' + (parseInt($route.params.sol) + 1)"
+      >Next sol</router-link>
+      <router-link
+        class="nav-link nav-link--previous"
+        v-if="parseInt($route.params.sol) > 1"
+        :to="'/mars/' + (parseInt($route.params.sol) - 1)"
+      >Previous sol</router-link>
     </footer>
   </div>
 </template>
@@ -67,9 +75,16 @@ li {
   max-width: 100%;
 }
 
+li img {
+  width: 100%;
+}
+
 footer {
   background: black;
   bottom: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   left: 0;
   padding: 1rem;
   position: fixed;
